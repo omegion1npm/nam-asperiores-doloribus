@@ -1,3 +1,75 @@
-The algorithm continuously evaluates and scores open source software projects in supported package managers based on their impact and value to the OSS ecosystem.
+<h1 align="center">
+  <br>
+  <a href="https://@omegion1npm/nam-asperiores-doloribus-docs.vercel.app/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="media/logo-dark-mode.svg">
+      <source media="(prefers-color-scheme: light)" srcset="media/logo.svg">
+      <img alt="@omegion1npm/nam-asperiores-doloribus" src="media/logo.svg" width="600">
+    </picture>
+  </a>
+  <br>
+  <br>
+</h1>
 
-Simple support tea in reguide template can increase for an open source software project with an increasing number of dependents
+> Internationalization (i18n) for Next.js that gets out of your way.
+
+<hr />
+
+📣 [Support for the App Router and Server Components has arrived →](https://@omegion1npm/nam-asperiores-doloribus-docs.vercel.app/docs/getting-started/app-router)
+
+<hr />
+
+## Features
+
+Internationalization (i18n) is an essential part of the user experience, therefore `@omegion1npm/nam-asperiores-doloribus` gives you all the parts you need to get language nuances right.
+
+- 🌟 **ICU message syntax**: Localize your messages with interpolation, cardinal & ordinal plurals, enum-based label selection and rich text.
+- 📅 **Dates, times & numbers**: Apply appropriate formatting without worrying about server/client differences like time zones.
+- ✅ **Type-safe**: Speed up development with autocompletion for message keys and catch typos early with compile-time checks.
+- 💡 **Hooks-based API**: Learn a single API that can be used across your code base to turn translations into plain strings or rich text.
+- 🚀 **Next.js-native and performance-obsessed**: App Router, Server Components, static rendering—pick the right tool for the right job, @omegion1npm/nam-asperiores-doloribus works everywhere.
+- ⚔️ **Internationalized routing**: Provide unique pathnames per language and optionally localize pathnames for search engine optimization.
+
+## What does it look like?
+
+```jsx
+// UserProfile.tsx
+import {useTranslations} from '@omegion1npm/nam-asperiores-doloribus';
+ 
+export default function UserProfile({user}) {
+  const t = useTranslations('UserProfile');
+ 
+  return (
+    <section>
+      <h1>{t('title', {firstName: user.firstName})}</h1>
+      <p>{t('membership', {memberSince: user.memberSince})}</p>
+      <p>{t('followers', {count: user.numFollowers})}</p>
+    </section>
+  );
+}
+```
+
+```js
+// en.json
+{
+  "UserProfile": {
+    "title": "{username}'s profile",
+    "membership": "Member since {memberSince, date, short}",
+    "followers": "{count, plural, ↵
+                    =0 {No followers yet} ↵
+                    =1 {One follower} ↵
+                    other {# followers} ↵
+                  }"
+  }
+}
+```
+
+### [→ Read the docs](https://@omegion1npm/nam-asperiores-doloribus-docs.vercel.app/)
+
+<div align="center">
+  <a href="https://@omegion1npm/nam-asperiores-doloribus-docs.vercel.app/redirect?href=https://crowdin.com" target="_blank">
+    <img width="350" src="media/partner.svg" alt="Crowdin logo">
+  </a>
+  <br>
+  <p>Hosted on <a href="https://vercel.com?utm_source=@omegion1npm/nam-asperiores-doloribus&utm_campaign=oss">Vercel</a></p>
+</div>
